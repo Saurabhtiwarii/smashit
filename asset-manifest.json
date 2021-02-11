@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/smashit/static/css/main.807b58be.chunk.css",
+    "main.js": "/smashit/static/js/main.bcaa666f.chunk.js",
+    "main.js.map": "/smashit/static/js/main.bcaa666f.chunk.js.map",
+    "runtime-main.js": "/smashit/static/js/runtime-main.2a0071e4.js",
+    "runtime-main.js.map": "/smashit/static/js/runtime-main.2a0071e4.js.map",
+    "static/js/2.4147f0d5.chunk.js": "/smashit/static/js/2.4147f0d5.chunk.js",
+    "static/js/2.4147f0d5.chunk.js.map": "/smashit/static/js/2.4147f0d5.chunk.js.map",
+    "static/js/3.7e39e1e2.chunk.js": "/smashit/static/js/3.7e39e1e2.chunk.js",
+    "static/js/3.7e39e1e2.chunk.js.map": "/smashit/static/js/3.7e39e1e2.chunk.js.map",
+    "index.html": "/smashit/index.html",
+    "static/css/main.807b58be.chunk.css.map": "/smashit/static/css/main.807b58be.chunk.css.map",
+    "static/js/2.4147f0d5.chunk.js.LICENSE.txt": "/smashit/static/js/2.4147f0d5.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/smashit/static/media/hole.54491cd3.png",
+    "static/media/avatar2.01464f56.png": "/smashit/static/media/avatar2.01464f56.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a0071e4.js",
+    "static/js/2.4147f0d5.chunk.js",
+    "static/css/main.807b58be.chunk.css",
+    "static/js/main.bcaa666f.chunk.js"
+  ]
+}
