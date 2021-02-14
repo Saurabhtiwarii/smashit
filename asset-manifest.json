@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/smashit/static/css/main.807b58be.chunk.css",
-    "main.js": "/smashit/static/js/main.bcaa666f.chunk.js",
-    "main.js.map": "/smashit/static/js/main.bcaa666f.chunk.js.map",
+    "main.js": "/smashit/static/js/main.3fb3f1c9.chunk.js",
+    "main.js.map": "/smashit/static/js/main.3fb3f1c9.chunk.js.map",
     "runtime-main.js": "/smashit/static/js/runtime-main.2a0071e4.js",
     "runtime-main.js.map": "/smashit/static/js/runtime-main.2a0071e4.js.map",
     "static/js/2.4147f0d5.chunk.js": "/smashit/static/js/2.4147f0d5.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.2a0071e4.js",
     "static/js/2.4147f0d5.chunk.js",
     "static/css/main.807b58be.chunk.css",
-    "static/js/main.bcaa666f.chunk.js"
+    "static/js/main.3fb3f1c9.chunk.js"
   ]
 }
