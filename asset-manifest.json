@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/smashit/static/css/main.61c8c9a2.chunk.css",
-    "main.js": "/smashit/static/js/main.8785fff3.chunk.js",
-    "main.js.map": "/smashit/static/js/main.8785fff3.chunk.js.map",
+    "main.css": "/smashit/static/css/main.e837853a.chunk.css",
+    "main.js": "/smashit/static/js/main.7a34a094.chunk.js",
+    "main.js.map": "/smashit/static/js/main.7a34a094.chunk.js.map",
     "runtime-main.js": "/smashit/static/js/runtime-main.2a0071e4.js",
     "runtime-main.js.map": "/smashit/static/js/runtime-main.2a0071e4.js.map",
     "static/js/2.f577e9ba.chunk.js": "/smashit/static/js/2.f577e9ba.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7e39e1e2.chunk.js": "/smashit/static/js/3.7e39e1e2.chunk.js",
     "static/js/3.7e39e1e2.chunk.js.map": "/smashit/static/js/3.7e39e1e2.chunk.js.map",
     "index.html": "/smashit/index.html",
-    "static/css/main.61c8c9a2.chunk.css.map": "/smashit/static/css/main.61c8c9a2.chunk.css.map",
+    "static/css/main.e837853a.chunk.css.map": "/smashit/static/css/main.e837853a.chunk.css.map",
     "static/js/2.f577e9ba.chunk.js.LICENSE.txt": "/smashit/static/js/2.f577e9ba.chunk.js.LICENSE.txt",
     "static/media/avatar1.89183647.png": "/smashit/static/media/avatar1.89183647.png",
     "static/media/avatar2.efad8f81.png": "/smashit/static/media/avatar2.efad8f81.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.2a0071e4.js",
     "static/js/2.f577e9ba.chunk.js",
-    "static/css/main.61c8c9a2.chunk.css",
-    "static/js/main.8785fff3.chunk.js"
+    "static/css/main.e837853a.chunk.css",
+    "static/js/main.7a34a094.chunk.js"
   ]
 }
