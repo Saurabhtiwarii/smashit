@@ -1,36 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
 .App {
   text-align: center;
-  min-height: 100vh;
 }
-html{
+
+body {
+  background: rgb(145, 145, 236);
+}
+html {
   font-size: 10px;
 }
-.App{
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.countdown-board{
-  font-size: 3rem;
-}
-.start-btn, .continue-btn{
+.start-btn,
+.continue-btn,
+.back-btn {
   outline: none;
   border: none;
   padding: 1rem 3rem;
   background: rgb(28, 200, 109);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   font-size: 3rem;
   color: honeydew;
   cursor: pointer;
   border-radius: 2rem;
+  font-family: "Yusei Magic", sans-serif;
+  letter-spacing: 2px;
 }
-.game{
+.game {
   width: 80vw;
   margin: 0 auto;
   min-height: 90vh;
@@ -39,50 +40,73 @@ html{
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: "Yusei Magic", sans-serif;
   background: rgb(145, 145, 236);
   overflow: hidden;
 }
-.score-board{
-  font-size: 3rem;
-}
-.game__footer{
+
+.game__footer {
   display: flex;
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  justify-content: space-between;
-  width:80vw;
-  height: 10vh;
-  background:  #5353a8;
+  width: 80vw;
+  background: #5353a8;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+  padding-bottom: 1rem;
 }
-.intro-window{
+.intro-window {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  /* background: ; */
+  bottom: 0;
+  right: 0;
+  left: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(108, 108, 228);  
+  background: rgb(108, 108, 228);
   /* transition: transform 1s ease; */
   /* position: relative; */
 }
 
-.countdown-board, .score-board{
-  /* background: crimson; */
-  /* box-shadow: 0px 0px 4px rgb(255, 255, 255); */
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  color: white;
+.score-board {
+  /* position: absolute; */
   font-size: 2.5rem;
+  /* border-top: 0.5rem solid rgb(145, 145, 236); */
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  padding: 1rem 2rem;
+  top: 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: rgb(145, 145, 236);
 }
-
-
-.intro-window::after{
-  content: '';
+.countdown-board {
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0px;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #4bf34b;
+  background: rgb(55, 55, 87);
+  box-shadow: 1px 1px 10px rgb(55, 55, 87, 0.2);
+  min-width: 25rem;
+  letter-spacing: 2px;
+  transform: translateY(-200%);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.countdown-board.countdown-board-active {
+  transform: translateY(0%);
+}
+.intro-window::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -93,15 +117,13 @@ html{
   background-position: bottom;
   z-index: -1;
   opacity: 0.3;
-
-  
 }
-.intro-window h1{
-    font-size: 5rem;
-    color: rgb(208, 208, 245);
-    letter-spacing: 5px;
+.intro-window h1 {
+  font-size: 5rem;
+  color: rgb(208, 208, 245);
+  letter-spacing: 5px;
 }
-.ready-window{
+.ready-window {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -115,16 +137,16 @@ html{
   animation: text-anm 1s ease infinite;
   display: none;
 }
-@keyframes text-anm{
-  from{
+@keyframes text-anm {
+  from {
     font-size: 3rem;
   }
-  to{
+  to {
     font-size: 8rem;
   }
 }
 
-.hole{
+.hole {
   background: url(./images/hole.png);
   background-size: 90%;
   background-repeat: no-repeat;
@@ -132,50 +154,50 @@ html{
   position: relative;
   overflow: hidden;
   width: 30%;
-  height: 15rem; 
+  height: 15rem;
 }
 
-.hole1, .hole2, .hole3{
+.hole1,
+.hole2,
+.hole3 {
   background-size: 80%;
 }
 
-.avatar{
+.avatar {
   position: absolute;
   bottom: -100%;
   width: 100%;
   height: 100%;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
   display: flex;
   justify-content: center;
   overflow: hidden;
-} 
-.avatar img{
+}
+.avatar img {
   width: 40%;
   position: absolute;
   bottom: 0;
   display: block;
 }
 
-
-.hole.up .avatar{
+.hole.up .avatar {
   bottom: 0;
 }
-.hole.up .avatar{
- bottom: 0;
+.hole.up .avatar {
+  bottom: 0;
 }
-.game__ground{
+.game__ground {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0; 
+  padding: 3rem 0;
 }
 
-.players{
-  background: purple;
+.players {
   position: absolute;
   width: 80vw;
   min-height: 100%;
@@ -185,28 +207,29 @@ html{
   align-items: center;
   background: #864bca;
 }
-.players h1{
+.players h1 {
   font-size: 5rem;
   color: #9898ee;
   letter-spacing: 1rem;
+  font-family: "Yusei Magic", sans-serif;
 }
-.players .players__list{
-        width: 70%;
-        height: 60%;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        place-content: center;
-        grid-template-columns: 35% 35%;
-        grid-template-rows: auto auto;
-        grid-gap: 5rem;
-        margin-bottom: 3rem;
+.players .players__list {
+  width: 70%;
+  height: 60%;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 35% 35%;
+  grid-template-rows: auto auto;
+  grid-gap: 5rem;
+  margin-bottom: 3rem;
 }
-.players .players__list li{
+.players .players__list li {
   position: relative;
   display: flex;
-  border-top-left-radius:50% ;
-  border-top-right-radius:50% ;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   background: rgb(179, 202, 233);
   overflow: hidden;
   transition: border 200ms;
@@ -216,46 +239,103 @@ html{
   /* border: 2px solid red; */
 }
 
-.players .players__list li img{
+.players .players__list li img {
   width: 100%;
   height: 100%;
 }
 
+.hit_sound {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
-@media (max-width:700px){
-  .game{
+.gameover-screen {
+  background: rgb(108, 108, 228);
+  z-index: 1000;
+  position: fixed;
+  /* transform: translateY(100%); */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: game-end-anm 0.8s forwards;
+  display: none;
+}
+
+.gameover-screen::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-image: url(./images/background2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: -1;
+  opacity: 0.2;
+}
+.gameover-screen__message {
+  font-size: 6rem;
+  color: #fff9f9;
+  text-align: center;
+  text-shadow: 4px 4px #1cc86d;
+}
+.gameover-screen__score {
+  font-size: 3rem;
+  color: #fff9f9;
+  margin: 1rem 0 3rem 0;
+}
+
+.back-btn {
+  font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  .game {
     width: 100vw;
   }
-  .hole{
+  .hole {
     width: 40%;
     height: 15rem;
   }
-  .game__footer{
+  .game__footer {
     width: 100vw;
     display: flex;
-    justify-content: space-around;
     align-items: center;
   }
 
-  .players{
+  .players {
     width: 100vw;
   }
 
-  .players .players__list{
+  .players .players__list {
     width: 80%;
     height: 70%;
   }
- 
 }
 
-@media (max-width:500px){
-  .countdown-board, .score-board{
+@media (max-width: 500px) {
+  .countdown-board {
+    font-size: 2rem;
+    min-width: 20rem;
+  }
+  .score-board {
     font-size: 2rem;
   }
-  .players .players__list{
+
+  .players .players__list {
     width: 80%;
     height: 60%;
   }
 
- 
+  .hole {
+    height: 12rem;
+  }
 }
